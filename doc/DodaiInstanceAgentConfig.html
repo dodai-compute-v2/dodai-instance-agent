@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: DodaiInstanceAgentConfig
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!DodaiInstanceAgentConfig.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (D)</a> &raquo;
+    
+    
+    <span class="title">DodaiInstanceAgentConfig</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: DodaiInstanceAgentConfig
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">DodaiInstanceAgentConfig</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">bin/dodai-instance-agent.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>設定に関するクラス</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="dodai_env-classvariable" class="">@@dodai_env =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>環境定義</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='lbrace'>{</span><span class='rbrace'>}</span></pre></dd>
+      
+        <dt id="err_msg-classvariable" class="">@@err_msg =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>エラーメッセージの定義</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='lbrace'>{</span><span class='rbrace'>}</span></pre></dd>
+      
+        <dt id="logger-classvariable" class="">@@logger =
+          
+        </dt>
+        <dd><pre class="code"><span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='cvar'>@@dodai_env</span><span class='lbracket'>[</span><span class='symbol'>:log</span><span class='rbracket'>]</span><span class='rparen'>)</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_system_ip-instance_method" title="#get_system_ip (instance method)">- (String) <strong>get_system_ip</strong>(config = load_config) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>system の IP アドレスを返す.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_variables-instance_method" title="#get_variables (instance method)">- (Hash) <strong>get_variables</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>@@dodai_env と @@err_msg の設定を返す.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#load_config-instance_method" title="#load_config (instance method)">- (Hash) <strong>load_config</strong>(config_file = &quot;#{@@dodai_env[:etc]}/dodai.json&quot;) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>dodai-instance-agent の設定を読み込む.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#save_config-instance_method" title="#save_config (instance method)">- (Object) <strong>save_config</strong>(config, config_file = &quot;#{@@dodai_env[:etc]}/dodai.json&quot;) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>dodai-instance-agent の設定を保存.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="get_system_ip-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_system_ip</strong>(config = load_config) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>system の IP アドレスを返す</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>config</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>load_config</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>dodai-instance-agent の設定</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>IP アドレス</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+48
+49
+50
+51
+52</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'bin/dodai-instance-agent.rb', line 48</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_system_ip'>get_system_ip</span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span> <span class='op'>=</span> <span class='id identifier rubyid_load_config'>load_config</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_config'>config</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>interfaces</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_interface'>interface</span><span class='op'>|</span>
+		<span class='kw'>return</span> <span class='id identifier rubyid_interface'>interface</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ip_address</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>system</span><span class='tstring_end'>&#39;</span></span> <span class='op'>==</span> <span class='id identifier rubyid_interface'>interface</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>role</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+	<span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_variables-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>get_variables</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>@@dodai_env と @@err_msg の設定を返す</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>dodai_env と err_msg のハッシュ</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+41
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'bin/dodai-instance-agent.rb', line 41</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_variables'>get_variables</span>
+	<span class='kw'>return</span> <span class='lbrace'>{</span><span class='symbol'>:dodai_env</span> <span class='op'>=&gt;</span> <span class='cvar'>@@dodai_env</span><span class='comma'>,</span> <span class='symbol'>:err_msg</span> <span class='op'>=&gt;</span> <span class='cvar'>@@err_msg</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="load_config-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>load_config</strong>(config_file = &quot;#{@@dodai_env[:etc]}/dodai.json&quot;) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>dodai-instance-agent の設定を読み込む</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>config_file</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&quot;#{@@dodai_env[:etc]}/dodai.json&quot;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>設定ファイルのパス</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>設定値</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'bin/dodai-instance-agent.rb', line 57</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_load_config'>load_config</span><span class='lparen'>(</span><span class='id identifier rubyid_config_file'>config_file</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='cvar'>@@dodai_env</span><span class='lbracket'>[</span><span class='symbol'>:etc</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>/dodai.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+	<span class='cvar'>@@logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>config_file = </span><span class='embexpr_beg'>#{</span><span class='cvar'>@@dodai_env</span><span class='lbracket'>[</span><span class='symbol'>:etc</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>/dodai.json</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>if</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_exist?'>exist?</span><span class='lparen'>(</span><span class='id identifier rubyid_config_file'>config_file</span><span class='rparen'>)</span>
+		<span class='kw'>begin</span>
+			<span class='id identifier rubyid_config_size'>config_size</span> <span class='op'>=</span> <span class='backtick'>`</span><span class='tstring_content'>ls -l </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config_file'>config_file</span><span class='embexpr_end'>}</span><span class='tstring_end'>`</span></span>
+			<span class='cvar'>@@logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>load_config: before read config: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config_size'>config_size</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+			<span class='id identifier rubyid_config_data'>config_data</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_open'>open</span><span class='lparen'>(</span><span class='id identifier rubyid_config_file'>config_file</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>r</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span>
+			<span class='id identifier rubyid_config_size'>config_size</span> <span class='op'>=</span> <span class='backtick'>`</span><span class='tstring_content'>ls -l </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config_file'>config_file</span><span class='embexpr_end'>}</span><span class='tstring_end'>`</span></span>
+			<span class='cvar'>@@logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>load_config: after read config: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config_size'>config_size</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+			<span class='cvar'>@@logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>contents of config_file: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config_data'>config_data</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+			<span class='id identifier rubyid_config'>config</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_config_data'>config_data</span><span class='rparen'>)</span>
+		<span class='kw'>rescue</span>
+			<span class='cvar'>@@logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Cannot read file </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config_file'>config_file</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+		<span class='kw'>end</span>
+	<span class='kw'>else</span>
+		<span class='id identifier rubyid_config'>config</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+			<span class='symbol'>:bind_port</span> <span class='op'>=&gt;</span> <span class='int'>60601</span><span class='comma'>,</span>
+			<span class='symbol'>:state</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>deploying</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+			<span class='symbol'>:interfaces</span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+				<span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>eth0</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+				<span class='symbol'>:mac_address</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>00:00:00:00:00:00</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+				<span class='symbol'>:ip_address</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>0.0.0.0</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+				<span class='symbol'>:netmask</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>0.0.0.0</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+				<span class='symbol'>:role</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>system</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+				<span class='rbrace'>}</span><span class='comma'>,</span>
+			<span class='rbracket'>]</span><span class='comma'>,</span>
+			<span class='symbol'>:metadata_server</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
+		<span class='rbrace'>}</span>
+		<span class='id identifier rubyid_config'>config</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span><span class='rparen'>)</span>
+	<span class='kw'>end</span>
+	<span class='kw'>return</span> <span class='id identifier rubyid_config'>config</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="save_config-instance_method">
+  
+    - (<tt>Object</tt>) <strong>save_config</strong>(config, config_file = &quot;#{@@dodai_env[:etc]}/dodai.json&quot;) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>dodai-instance-agent の設定を保存</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>config</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>dodai-instance-agent の設定</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>config_file</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&quot;#{@@dodai_env[:etc]}/dodai.json&quot;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>設定ファイルのパス</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'bin/dodai-instance-agent.rb', line 93</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_save_config'>save_config</span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='comma'>,</span> <span class='id identifier rubyid_config_file'>config_file</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='cvar'>@@dodai_env</span><span class='lbracket'>[</span><span class='symbol'>:etc</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>/dodai.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+	<span class='cvar'>@@logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>save_config: contents of config: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config'>config</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>if</span> <span class='id identifier rubyid_config'>config</span> <span class='kw'>and</span> <span class='int'>0</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>
+		<span class='id identifier rubyid_config_size'>config_size</span> <span class='op'>=</span> <span class='backtick'>`</span><span class='tstring_content'>ls -l </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config_file'>config_file</span><span class='embexpr_end'>}</span><span class='tstring_end'>`</span></span>
+		<span class='cvar'>@@logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>save_config: before save config: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config_size'>config_size</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+		<span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_open'>open</span><span class='lparen'>(</span><span class='id identifier rubyid_config_file'>config_file</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>w</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_file'>file</span><span class='op'>|</span>
+			<span class='id identifier rubyid_file'>file</span><span class='period'>.</span><span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span>
+		<span class='kw'>end</span>
+		<span class='id identifier rubyid_config_size'>config_size</span> <span class='op'>=</span> <span class='backtick'>`</span><span class='tstring_content'>ls -l </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config_file'>config_file</span><span class='embexpr_end'>}</span><span class='tstring_end'>`</span></span>
+		<span class='cvar'>@@logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>save_config: after save config: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_config_size'>config_size</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+	<span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Tue Mar  8 18:04:28 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.2).
+</div>
+
+  </body>
+</html>
